@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0b1020; /* deep navy */
+  --foreground: #e6e9f5; /* light foreground */
+  --muted: #11172d;
+  --muted-foreground: #a6adcb;
+  --card: #0f162e;
+  --card-foreground: #e6e9f5;
+  --border: #1b2548;
+  --input: #121a36;
+
+  --primary: #5b9cff; /* brand blue */
+  --primary-foreground: #06132e;
+  --secondary: #8b5cf6; /* accent purple */
+  --secondary-foreground: #0d0a1a;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --destructive: #ef4444;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+    --foreground: #0b1020;
+    --muted: #f1f5fb;
+    --muted-foreground: #4b5563;
+    --card: #ffffff;
+    --card-foreground: #0b1020;
+    --border: #e5e7eb;
+    --input: #f3f4f6;
+
+    --primary: #2563eb;
+    --primary-foreground: #ffffff;
+    --secondary: #7c3aed;
+    --secondary-foreground: #ffffff;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-destructive: var(--destructive);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --radius-md: 12px;
+  --radius-lg: 16px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(1200px 600px at 80% -10%, rgba(91, 156, 255, 0.15), transparent 60%),
+    radial-gradient(900px 500px at -10% 20%, rgba(139, 92, 246, 0.12), transparent 60%),
+    var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, Segoe UI, Roboto,
+    Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji",
+    "Segoe UI Emoji";
+}
+
+.container-px {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-px {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-px {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

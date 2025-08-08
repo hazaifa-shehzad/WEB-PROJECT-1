@@ -1,0 +1,32 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#5b9cff" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.25"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1b2548" stroke-width="1"/>
+    </pattern>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" fill="#0f162e"/>
+  <rect width="1200" height="800" fill="url(#grid)"/>
+  <g opacity="0.9">
+    <circle cx="960" cy="60" r="220" fill="url(#g)" filter="url(#blur)"/>
+    <circle cx="60" cy="160" r="180" fill="url(#g)" filter="url(#blur)"/>
+  </g>
+  <g stroke="#5b9cff" stroke-width="3" fill="none">
+    <path d="M120 700 C 220 680, 260 600, 340 560 S 560 520, 640 480 780 380, 900 360 1040 380, 1080 320"/>
+    <circle cx="120" cy="700" r="6" fill="#5b9cff"/>
+    <circle cx="340" cy="560" r="6" fill="#5b9cff"/>
+    <circle cx="640" cy="480" r="6" fill="#5b9cff"/>
+    <circle cx="900" cy="360" r="6" fill="#5b9cff"/>
+    <circle cx="1080" cy="320" r="6" fill="#5b9cff"/>
+  </g>
+  <g>
+    <rect x="24" y="24" width="220" height="80" rx="12" fill="#0b1020" stroke="#1b2548"/>
+    <text x="40" y="74" font-family="ui-sans-serif, system-ui" font-size="28" fill="#e6e9f5">RouteFlex</text>
+  </g>
+</svg>
